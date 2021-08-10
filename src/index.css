@@ -1,17 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     background: #2f3238;
     color: #fff;
-    font-weight: 500;
-    font-size: 1.05em;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.05em;
+    font-weight: 500;
     margin: 0 auto;
     text-align: center;
 }
@@ -26,15 +26,14 @@ body {
 }
 .container .content .input {
     display: inline-block;
+    margin-bottom: 3em;
     margin: 1em;
-    width: calc(98%);
     max-width: 350px;
     position: relative;
-    margin-bottom: 3em;
+    width: calc(98%);
 }
 
-/* Ruri */
-  .input_ruri label {
+.input_ruri label {
     color: #696969;
     display: flex;
     font-weight: 700;
@@ -44,8 +43,9 @@ body {
     transition: all .25s;
     width: 100%;
     z-index: 10;
-  }
-  .input_ruri input {
+}
+
+.input_ruri input {
     background: transparent;
     border: none;
     border-bottom: 8px solid #b7c3ac;
@@ -61,16 +61,18 @@ body {
     transition: all .25s;
     width: 350px;
     z-index: 99;
-  }
-  .input_ruri input:focus,
-  .input_ruri input:valid {
+}
+
+.input_ruri input:focus,
+.input_ruri input:valid {
     border-bottom: 3px solid #b7c3ac;
     height: 48px;
-  }
-  .input_ruri input:focus:focus + label,
-  .input_ruri input:valid:focus + label,
-  .input_ruri input:focus:valid + label,
-  .input_ruri input:valid:valid + label {
+}
+
+.input_ruri input:focus:focus + label,
+.input_ruri input:valid:focus + label,
+.input_ruri input:focus:valid + label,
+.input_ruri input:valid:valid + label {
     color: #b7c3ac;
     transform: translate(-34px, 46px) scale(0.8);
 }
